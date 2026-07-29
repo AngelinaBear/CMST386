@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3 - Responsive Design</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="compiled.css">
+
+    <!-- How I implemented LESS: I already had Node.js installed, so I installed the LESS compiler through npm and used 
+     the lessc command to compile my project3.less file into compiled.css. After making changes to the .less file, I 
+     recompiled it so the updated CSS would be applied to my web pages. I used LESS variables to store the primary button 
+     color and border radius, making those values easy to reuse and update. I also created a mixin to apply the rounded 
+     corners and box shadow to the call-to-action button, and used nested rules to organize the breadcrumb link styles. -->
+
+    <!--<link rel="stylesheet/less" href="project3.less">-->
+</head>
+
+<body>
+
+    <header>
+        <h1>Project 3: Responsive Design</h1>
+
+        <nav class="topnav" id="myTopnav">
+            <a href="../index.html">Home</a>
+            <a href="project3.html">Project 3</a>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                &#9776;
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="breadcrumbs">
+            <a href="../index.html">Home</a>
+            <span>&gt;</span>
+            <span>Project 3</span>
+        </div>
+        <div class="content-grid">
+            <section>
+                <h2>Importance of Responsive Design</h2>
+
+                <p>
+                    Responsive design is important because it allows a website to adjust to different
+                    screen sizes, including desktop computers, tablets, and smartphones. This creates
+                    a better experience for visitors because the content is easier to read and navigate
+                    without excessive zooming or scrolling. Since many people browse the internet on
+                    mobile devices, responsive design helps users find the information they need on
+                    any device.
+                </p>
+            </section>
+
+            <section>
+                <h2>Google Analytics Reports</h2>
+
+                <p>
+                    Google Analytics provides several reports that help website owners understand how
+                    visitors use their websites. The Pages and Screens report shows which pages receive
+                    the most views and which content visitors access. The Demographics report provides
+                    information about the audience, including details such as location, age, and
+                    interests. This information can help website owners create content that better
+                    matches their target audience. The Traffic Acquisition report shows how visitors
+                    found the website, such as through a search engine, social media, or a direct link.
+                    These reports help website owners understand what their audience is viewing, who
+                    their visitors are, and how people reach the website.
+                </p>
+            </section>
+        </div>
+        <p>
+            <a href="preprocessing.html" class="cta-button">Learn Preprocessing</a>
+        </p>
+
+    </main>
+
+    <footer>
+        <p>CMST 386 Project 3</p>
+    </footer>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>

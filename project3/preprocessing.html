@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3 - CSS Preprocessing</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="compiled.css">
+</head>
+
+<body id="top">
+
+    <header>
+        <h1>CSS Preprocessing</h1>
+
+        <nav class="topnav" id="myTopnav">
+            <a href="../index.html">Home</a>
+            <a href="project3.html">Project 3</a>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                &#9776;
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="breadcrumbs">
+            <a href="../index.html">Home</a>
+            <span>&gt;</span>
+            <a href="project3.html">Project 3</a>
+            <span>&gt;</span>
+            <span>Preprocessing</span>
+        </div>
+        <section>
+            <h2>Client-Side and Server-Side Preprocessing</h2>
+
+            <p>
+                CSS preprocessing can be implemented on either the client side or the server side.
+                Client-side preprocessing happens in the browser, usually with JavaScript that reads
+                the preprocessing file and converts it while the page loads. Server-side preprocessing
+                happens before the website is sent to the user. The LESS or SASS file is compiled into
+                a regular CSS file, and the browser only receives the finished CSS. Server-side
+                preprocessing is usually better for performance because the browser has less work to do.
+            </p>
+        </section>
+
+        <section>
+            <h2>LESS Features</h2>
+
+            <p>
+                LESS includes several features that make CSS easier to organize and reuse. Variables
+                store values such as colors, font sizes, and spacing so the same value can be used in
+                multiple places. Mixins are reusable groups of CSS properties that can be added to
+                different selectors. Functions can modify values, such as making a color lighter or
+                darker. Operators allow developers to perform calculations with numbers, including
+                addition, subtraction, multiplication, and division. Nesting allows related selectors
+                to be placed inside another selector, which can make the stylesheet easier to read.
+                These features can reduce repeated code and make future design changes easier.
+            </p>
+        </section>
+
+        <a href="#top">Back to Top</a>
+    </main>
+
+    <footer>
+        <p>CMST 386 Project 3</p>
+    </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>

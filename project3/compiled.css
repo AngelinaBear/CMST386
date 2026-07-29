@@ -1,0 +1,43 @@
+.cta-button {
+  background: linear-gradient(#4c8c74, #2f5d50);
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px gray;
+}
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0 2rem;
+  font-size: 0.9rem;
+}
+.breadcrumbs a {
+  color: #4c8c74;
+  text-decoration: none;
+}
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+/* Tablet */
+@media (max-width: 768px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Phone */
+@media (max-width: 480px) {
+  .cta-button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}
