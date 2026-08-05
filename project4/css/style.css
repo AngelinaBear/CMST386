@@ -100,7 +100,7 @@ img {
 header {
   background-color: #ffffff;
   padding: 1rem 2rem;
-  border-bottom: 4px solid #4f8fa8;
+  border-bottom: 4px solid #356e84;
 
   display: flex;
   align-items: center;
@@ -160,7 +160,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #4f8fa8;
+  color: #356e84;
 }
 
 /* ---------- Services Dropdown ---------- */
@@ -197,7 +197,7 @@ nav li ul a {
 
 nav li ul a:hover {
   color: #ffffff;
-  background-color: #4f8fa8;
+  background-color: #356e84;
 }
 
 /* ==========================
@@ -205,7 +205,7 @@ nav li ul a:hover {
 ========================== */
 
 footer {
-  background-color: #4f8fa8;
+  background-color: #356e84;
   color: #ffffff;
   text-align: center;
   padding: 1.5rem;
@@ -231,6 +231,6 @@ footer a:hover {
 .fa-solid,
 .fa-regular,
 .fa-brands {
-  color: #4f8fa8;
+  color: #356e84;
   margin-right: 0.5rem;
 }
