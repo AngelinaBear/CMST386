@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Tails Dog Daycare & Boarding | Contact & Booking</title>
+
+    <meta name="description"
+        content="Contact Happy Tails Dog Daycare & Boarding or request daycare, boarding, or grooming services in Stafford, Virginia.">
+    <meta name="keywords"
+        content="contact Happy Tails, dog daycare booking, dog boarding request, grooming appointment, Stafford VA">
+    <meta name="author" content="Angelina Cruz">
+    <meta name="copyright" content="2026 Happy Tails Dog Daycare & Boarding">
+    <meta name="robots" content="index, follow">
+
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+
+        <a href="project4.html" class="logo">
+            <img src="images/logo.png" alt="Happy Tails Dog Daycare & Boarding logo">
+        </a>
+
+        <div class="company-name">
+            Happy Tails Dog Daycare & Boarding
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="project4.html">Home</a></li>
+
+                <li><a href="about.html">About Us</a></li>
+
+                <li>
+                    <a href="services.html">Services</a>
+                    <ul>
+                        <li><a href="daycare.html">Daycare</a></li>
+                        <li><a href="boarding.html">Boarding</a></li>
+                        <li><a href="grooming.html">Grooming</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="pricing.html">Pricing</a></li>
+
+                <li><a href="gallery.html">Gallery</a></li>
+
+                <li><a href="contact.html">Contact & Booking</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h1>Contact & Booking</h1>
+
+        <section>
+            <h2>Send Us a Message</h2>
+
+            <p>
+                Use the form below to ask a question, request pricing information,
+                or contact us about daycare, boarding, or grooming services.
+                Submitting the form does not confirm a reservation. A member of the
+                Happy Tails team will follow up with you about availability and next steps.
+            </p>
+
+            <form action="mailto:acruz113@student.umgc.edu" method="post" enctype="text/plain" id="contact-form">
+
+                <fieldset>
+                    <legend>Contact Information</legend>
+
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" tabindex="1" required>
+
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" tabindex="2"
+                        required>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" tabindex="3">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Request Details</legend>
+
+                    <label for="reason">Reason for Contact</label>
+                    <select id="reason" name="reason" tabindex="4">
+                        <option value="">Choose a reason</option>
+                        <option value="general-question">General Question</option>
+                        <option value="daycare-request">Daycare Request</option>
+                        <option value="boarding-request">Boarding Request</option>
+                        <option value="grooming-request">Grooming Appointment</option>
+                        <option value="pricing-question">Pricing Question</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <p>Preferred Contact Method</p>
+
+                    <input type="radio" id="contact-email" name="contact-method" value="email" tabindex="5">
+                    <label for="contact-email">Email</label>
+
+                    <input type="radio" id="contact-phone" name="contact-method" value="phone" tabindex="6">
+                    <label for="contact-phone">Phone</label>
+
+                    <h3>Additional Information</h3>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="medication" name="additional-information" value="medication"
+                            tabindex="7">
+                        <label for="medication">My dog takes medication.</label>
+
+                        <input type="checkbox" id="special-needs" name="additional-information" value="special-needs"
+                            tabindex="8">
+                        <label for="special-needs">My dog has special care needs.</label>
+
+                        <input type="checkbox" id="time-sensitive" name="additional-information" value="time-sensitive"
+                            tabindex="9">
+                        <label for="time-sensitive">This request is time-sensitive.</label>
+                    </div>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6"
+                        placeholder="Tell us how we can help. For booking requests, include your dog's name, preferred dates, and any important care information."
+                        tabindex="10"></textarea>
+                </fieldset>
+
+                <button type="submit" tabindex="11">Submit Request</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>&copy; 2026 Happy Tails Dog Daycare & Boarding</p>
+
+        <p><a href="privacy.html">Privacy Policy</a></p>
+
+        <p id="datetime"></p>
+
+        <p><a href="../index.html">Back to Course Home</a></p>
+
+    </footer>
+
+    <script src="javascript/script.js"></script>
+
+</body>
+
+</html>
